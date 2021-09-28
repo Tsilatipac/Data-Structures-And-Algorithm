@@ -12,6 +12,9 @@
         <module>ZuoChengYun</module>
         <module>Practice</module>
     </modules>
+    <properties>
+        <jmh.version>1.32</jmh.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -28,6 +31,17 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-core</artifactId>
+            <version>${jmh.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-generator-annprocess</artifactId>
+            <version>${jmh.version}</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
